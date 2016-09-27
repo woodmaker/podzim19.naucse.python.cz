@@ -4,7 +4,7 @@ python:
 cache:
 - pip
 script:
-- echo 'No linters, no tests...'
+- echo python site.py freeze
 deploy:
   provider: script
   script: python site.py deploy

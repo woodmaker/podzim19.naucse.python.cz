@@ -39,6 +39,7 @@ def index():
     return render_template("templates/index.html")
 
 @app.route('/courses/')
+@app.route('/courses//')
 def courses():
     # XXX: Better list
     return redirect(url_for('index'))
