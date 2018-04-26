@@ -28,7 +28,7 @@ Pokud tam daný rok neexistuje, musíš založit i tu složku pro rok.
 ## Definice kurzu
 
 Kurz se definuje pomocí souboru `info.yml`, který se umisťuje právě do té složky, kterou jsi výše vytvořil{{a}}.
-Tento soubor obsahuje všechny informace o tom kurz – název, popisek, kde a kdy se koná a pak samozřejmě plán jednotlivých lekcí.
+Tento soubor obsahuje všechny informace o tom kurzu – název, popisek, kde a kdy se koná a pak samozřejmě plán jednotlivých lekcí.
 Soubor je formátu YAML, který si teď trochu ukážeme.
 
 ### O formátu YAML
@@ -79,7 +79,7 @@ Pro potřeby kurzu je [zde]({{static("info.yml")}}) připravená šablona, ktero
 
 Nejdřív prvních pár základních povinných údajů:
 
-* `title` slouží pro název kurz (nepovinně lze dodefinovat pomocí `subtitle`)
+* `title` slouží pro název kurzu (nepovinně lze dodefinovat pomocí `subtitle`)
 * `description` slouží pro krátký popis kurzu (který se zobrazí v seznamu kurzů)
 * `long_description` slouží pro dlouhý popis kurzu, který se zobrazí na stránce kurzu
 
@@ -133,7 +133,7 @@ Buď můžeš převzít lekci z kanonického kurzu, nebo si nadefinovat vlastní
 
 Nicméně, co je společné, je definování data a času kurzu.
 Datum nastavíš klíčem `date`, ve formátu `YYYY-MM-DD`.
-Čas nastavovat nemusíš, použije se čas z `default_time`, ale můžeš ho přenastavit pomocí klíče `time`, který bude mít jako hodnotu další slovník s hodnotami `start` a/nebo `end` (ve formátu `HH:MM` obalené závorkami).
+Čas nastavovat nemusíš, použije se čas z `default_time`, ale můžeš ho přenastavit pomocí klíče `time`, který bude mít jako hodnotu další slovník s hodnotami `start` a/nebo `end` (ve formátu `HH:MM` obalené uvozovkami).
 
 #### Definice vlastní lekce
 

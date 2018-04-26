@@ -22,7 +22,7 @@ To, že je fork vytvořen poznáš tak, že tě GitHub přesměruje na stránku,
 Tvůj fork si teď potřebuješ přidat do lokálního repozitáře jako referenci, aby jsi tam pak mohl{{a}} poslat svůj kurz.
 To uděláš pomocí příkazu (nahraď `tvojejmeno` za tvoje uživatelské jméno na GitHubu):
 
-```bash
+```console
 $ git remote add tvojejmeno https://github.com/tvojejmeno/naucse.python.cz.git
 ```
 
@@ -30,7 +30,7 @@ Dále potřebuješ vytvořit commit se svým kurzem a případně se změnami v 
 Je také nutné se rozhodnout, jestli chceš svoje změny dělat přímo v hlavní větvi nebo jestli si na kurz vytvořit separátní větev.
 Pokud se s větvemi nechceš zaobírat, můžeš vytvářet rovnou commit, pokud chceš větev vytvořit, vymysli si nějaký její název a pusť příkazy
 
-```bash
+```console
 $ git branch nazevvetve
 $ git checkout nazevvetve
 ```
@@ -41,7 +41,7 @@ Více o větvích se můžeš dozvědět v [návodu na větvení v gitu]({{lesso
 Svůj commit teď potřebuješ dostat do svého forku na GitHubu.
 To uděláš příkazem (`tvojejmeno` nahraď za tvoje uživatelské jméno na GitHubu):
 
-```bash
+```console
 $ git push tvojejmeno
 ```
 
@@ -53,7 +53,7 @@ To se dělá pomocí souboru `link.yml`, se kterým se udělá Pull Request do z
 Nejdřív si vytvoř novou větev odvozenou od původního repozitáře, ve které vytvoříš soubor `link.yml`.
 To uděláš tímto příkazem (`pridanikurzu` můžeš změnit):
 
-```bash
+```console
 $ git checkout -b pridanikurzu origin/master
 ```
 
@@ -73,7 +73,7 @@ branch: nazevvetve
 
 Vytvoř s tímto souborem (a jen tímto souborem) commit a zase odešli změnu na GitHub.
 
-```bash
+```console
 $ git push tvojejmeno
 ```
 
